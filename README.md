@@ -658,6 +658,7 @@ Das ist eine sehr gute Grundlage für weitere AWS-Ressourcen wie EC2, IAM oder V
 
 
 ## Bucket Policy implimented ##
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -670,3 +671,4 @@ Das ist eine sehr gute Grundlage für weitere AWS-Ressourcen wie EC2, IAM oder V
         }
     ]
 }
+```
