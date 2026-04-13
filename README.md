@@ -655,3 +655,18 @@ Mit diesem Beispiel hast du ein einfaches, aber realistisches Terraform-Projekt 
 - verstanden, was intern über Provider und AWS-API passiert
 
 Das ist eine sehr gute Grundlage für weitere AWS-Ressourcen wie EC2, IAM oder VPC.
+
+
+## Bucket Policy implimented ##
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::mein-eindeutiger-demo-bucket-xyz-12345/*"
+        }
+    ]
+}
